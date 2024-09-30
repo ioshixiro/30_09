@@ -1,0 +1,33 @@
+.how_we_do{
+    width: 90vw;
+    max-width: 720px;
+    margin: 60px 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid #a0a0a0;
+    padding-bottom: 60px;
+
+    h1{
+        font-weight: 700;
+        font-size: 32px;
+        color: #232323;
+    }
+
+    .how_we_do_info{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 20px;
+
+        .how_we_do_item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.contact_us{
+    width: 90vw;
+    overflow: hidden;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    img{
+        height: 100%;
+        cursor: pointer;
+    }
+
+    form{
+        width: 49%;
+        display: flex;
+        margin-inline: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+        gap: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(114, 114, 114, 0.25);
+        background: #fff;
+
+        h1{
+            width: 100%;
+            font-weight: 700;
+            font-size: 32px;
+            color: #232323;
+        }
+
+        ul{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            li a{
+                font-weight: 400;
+                font-size: 16px;
+                color: #232323;
+            }
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            color: #232323;
+        }
+
+        input{
+            width: 100%;
+            height: 45px;
+            padding-left: 15px;
+            background: #f3f3f3;
+            border: none;
+        }
+
+        a button{
+            border: 1px solid #0f265c;
+            background-color: #fff;
+            width: 194px;
+            height: 45px;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+    
+            font-weight: 500;
+            font-size: 18px;
+            color: #232323;
+    
+            &:hover{
+                color: #fff;
+                background-color: #0f265c;
+            }
+        }
+    }
+}
+
+@media(max-width: 1315px){
+    .contact_us{
+        position: relative !important;
+        justify-content: end !important;
+
+        img{
+            position: absolute;
+            max-width: 100%;
+            max-width: 600px;
+            height: 100%;
+            z-index: 1;
+            left: 0;
+        }
+
+        form{
+            z-index: 2;
+            background-color: rgb(255, 255, 255, 0.7);
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 650px){
+    .contact_us{
+        img{
+            height: 100% !important;
+        }
+
+        form{
+            width: 100vw !important;
+            margin: 0 !important;
+        }
+    }
+}
+
+@media(max-width: 376px){
+    .contact_us ul{
+        display: none !important;
+    }
+}

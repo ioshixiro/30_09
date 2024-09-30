@@ -1,0 +1,35 @@
+.sign_types{
+    max-width: 720px;
+    width: 90vw;
+    margin: 0 5vw;
+    padding-block: 60px;
+    border-block: 1px solid #a0a0a0;
+
+    h1{
+        font-weight: 700;
+        font-size: 32px;
+        color: #232323;
+        margin-bottom: 30px;
+    }
+
+    .sign_type{
+        width: 100%;
+        max-width: 720px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        justify-content: space-around;
+        gap: 30px;
+
+        ul{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            p{
+                width: 150px;
+            }
+        }
+    }
+}

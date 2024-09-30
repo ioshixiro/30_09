@@ -1,0 +1,18 @@
+.frequently_bought{
+    width: 90vw;
+    max-width: 720px;
+    margin: 60px 5vw;
+
+    .frequently_bought_items{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        img{
+            width: 170px;
+        }
+    }
+}
